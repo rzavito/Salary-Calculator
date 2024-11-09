@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>محاسبه حقوق</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link href="./Fontawesome/css/all.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <div class="title-container">
+          <div class="title"><h1>برنامه محاسبه حقوق</h1></div>
+          <div class="content">
+            <div class="salary-total">
+              <input id="user-salary" type="text" oninput="formatNumber(this)" placeholder="حقوق خود را وارد کنید" />
+              <span class="salary-label"><p>حقوق کل</p></span>
+            </div>
+
+            <div class="calculate">
+              <div class="calculate-btn" onclick="salaryCalculate()">
+                <span class="calculate-icon"><i class="fa-solid fa-calculator"></i></span>
+                <span class="calculate-btn-txt"><p>محاسبه کن !</p></span>
+              </div>
+            </div>
+
+            <div class="salary-additional">
+              <input type="text" id="salaryMaliat"/>
+              <span class="salary-label"><p>مالیات</p></span>
+              <input type="text" id="salaryBimehKol" />
+              <span class="salary-label"><p>بیمه کل</p></span>
+            </div>
+
+            <div class="salary-additional">
+              <input type="text" id="salaryBimehKargar"/>
+              <span class="salary-label"><p>بیمه کارگر</p></span>
+              <input type="text" id="salaryBimehbikari"/>
+              <span class="salary-label"><p>بیمه بیکاری</p></span>
+            </div>
+
+            <div class="salary-total karfarma">
+              <input type="text" id="salaryBimehKarfarma"/>
+              <span class="salary-label"><p>بیمه کارفرما</p></span>
+            </div>
+
+            <div class="spacer">
+            </div>
+
+            <div class="salary-total">
+              <input id="salaryKhales" type="text" />
+              <span class="salary-label"><p>حقوق خالص</p></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

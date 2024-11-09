@@ -1,0 +1,201 @@
+@font-face {
+    font-family: vazir;
+    src: url(./Font/Vazirmatn-FD-Medium.woff2);
+}
+
+@font-face {
+    font-family: vazir-reg;
+    src: url(./Font/Vazirmatn-FD-Regular.woff2);
+}
+
+@font-face {
+    font-family: vazir-thin;
+    src: url(./Font/Vazirmatn-FD-Thin.woff2);
+}
+
+@font-face {
+    font-family: vazir-light;
+    src: url(./Font/Vazirmatn-FD-Light.woff2);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DDE5F4;
+}
+
+.container {
+    width: 500px;
+    height: 630px;
+    background-color: #F0F6FE;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px -4px rgba(188, 188, 188, 1);
+    -webkit-box-shadow: 0px 0px 15px -4px rgba(188, 188, 188, 1);
+    -moz-box-shadow: 0px 0px 15px -4px rgba(188, 188, 188, 1);
+}
+
+.title {
+    width: 100%;
+    height: 110px;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    font-family: vazir;
+    text-shadow: 4px 4px 26px rgba(0,0,0,0.26);
+}
+
+.content {
+    height: 520px;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.7em;
+}
+
+.calculate {
+    width: 85%;
+    height: 50px;
+    /* background-color: lightgreen; */
+    display: flex;
+    justify-content: center;
+}
+
+.salary-total {
+    height: 50px;
+    width: 85%;
+    background-color: #ffff;
+    /* background-color: chartreuse; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px -4px rgba(188, 188, 188, 1);
+    -webkit-box-shadow: 0px 0px 15px -4px rgba(188, 188, 188, 1);
+    -moz-box-shadow: 0px 0px 15px -4px rgba(188, 188, 188, 1);
+}
+
+.salary-additional {
+    height: 50px;
+    width: 85%;
+    background-color: #ffff;
+    /* background-color: chartreuse; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px -4px rgba(188, 188, 188, 1);
+    -webkit-box-shadow: 0px 0px 15px -4px rgba(188, 188, 188, 1);
+    -moz-box-shadow: 0px 0px 15px -4px rgba(188, 188, 188, 1);
+}
+
+.spacer {
+    width: 82%;
+    height: 1.5px;
+    background-color: #d7dfec;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+}
+
+.salary-total input {
+    height: 45px;
+    width: 55%;
+    border: 0;
+    outline: 0;
+    font-family: vazir;
+    text-align: center;
+    font-size: 19px;
+}
+
+.salary-additional input {
+    height: 45px;
+    width: 20%;
+    border: 0;
+    outline: 0;
+    font-family: vazir;
+    text-align: center;
+    font-size: 19px;
+    color: #3E4684;
+}
+
+.salary-total input::placeholder {
+    text-align: center;
+    font-size: 18px;
+}
+
+.salary-total span {
+    height: 45px;
+    width: 35%;
+    /* background-color: burlywood; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: vazir;
+    font-size: 18px;
+    direction: rtl;
+    /* padding-right: 5px; */
+}
+
+.salary-additional span {
+    height: 45px;
+    /* width: 25%; */
+    /* background-color: burlywood; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: vazir;
+    font-size: 18px;
+    direction: rtl;
+    /* padding-right: 5px; */
+}
+
+.calculate-btn {
+    width: 50%;
+    height: 50px;
+    background-color: #3E4684;
+    color: white;
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: vazir;
+    font-size: 17px;
+    gap: 5px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.karfarma input{
+    color: #3E4684;
+}
+
+.calculate-btn:hover {
+    box-shadow: 0px 0px 15px 3px rgba(25,110,195,0.3);
+    -webkit-box-shadow: 0px 0px 15px 3px rgba(25,110,195,0.3);
+    -moz-box-shadow: 0px 0px 15px 3px rgba(25,110,195,0.3);
+}
+
+.calculate-icon {
+    font-size: 19px;
+}
+
+@media (max-width: 544px) {
+    .container {
+        width: 90%;
+    }
+}
